@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Math Tutor App</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/shuttle.png" type="image/x-icon">
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- Main JavaScript -->
+    <script src="/js/main.js" defer></script>
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <!-- Header Section -->
+    <div class="container-fluid">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
+          <a href="/index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <span class="fs-4 fw-bold main-head" style="font-family: 'Open Sans';">Virtual Math Tutor App <img src="/img/shuttle.png" width="24px" alt="main icon"></span>
+          </a>
+    
+          <ul class="nav nav-pills">
+
+            <li class="nav-item"><a href="#calculation-main"  style="text-decoration: none; color: black;" class="nav-link"><img src="/img/calculator.png" width="24px" style="margin-top: -2.5px;" alt="main icon"> Calculator</a></li>
+            <li class="nav-item"><a href="#contact-main" style="text-decoration: none; color: black;" class="nav-link"><img src="/img/mail.png" width="24px" style="margin-top: -2.5px;" alt="main icon"> Contact Us</a></li>
+          </ul>
+        </header>
+    </div>
+
+    <!-- Working Section -->
+    <div class="container-fluid col-xxl-12 px-4 py-5 grad-background working-section">
+        <div class="row flex-lg-row align-items-center g-2 py-5">
+          <div class="col-lg-12">
+            <h1 class="display-6 fw-bold lh-1 mb-3 head1 text-center" style="font-family: 'Open Sans'; color: white;">Working of this application</h1>
+            <p class="lead" style="color: white; font-size: 18px;" align="justify">This application can be used to solve simple math problems asked by the user. This application takes both text and speech as the input from the user. Let's assume that you ask the following question to the application - “What is fourteen divided by two?”. This application would process the speech input from the you in this case and return “7” as the output.</p>
+          </div>
+        </div>
+    </div>
+
+    <!-- Scope Section -->
+    <div class="container-fluid col-xxl-12 px-4 py-5"
+        <div class="row flex-lg-row align-items-center g-2 py-5">
+          <div class="col-lg-12">
+            <h1 class="display-6 fw-bold lh-1 mb-3 head2 text-center" style="font-family: 'Open Sans';">Scope of this application</h1>
+            <div class="list-group">
+                <p class="list-group-item list-group-item-action text-center list-style border-top">
+                  The application works with the speech or text user inputs in the English language only.
+                </p>
+                <p class="list-group-item list-group-item-action text-center list-style border-top">
+                    Decimals and negative numbers are not allowed. The numbers in the input text/speech can be of maximum 3 digits each.
+                </p>
+                <p class="list-group-item list-group-item-action text-center list-style border-top">
+                    The input expression or voice command consists of a single mathematical operator.
+                </p>
+                <p class="list-group-item list-group-item-action text-center list-style border-top">
+                    This application will also perform the following operations -  LCM and GCD.
+                </p>
+              </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Speech or Text Calculator Section -->
+    <div class="container-fluid col-xxl-12 px-4 py-5 grad-background">
+        <a id="calculation-main"><div class="row flex-lg-row align-items-center g-2 py-5">
+          <div class="col-lg-12">
+            <h1 class="display-6 fw-bold lh-1 mb-3 head3 text-center" style="font-family: 'Open Sans'; color: white;">Speech or Text Calculator</h1>
+            <div class="container text-center">
+                <form id="search-form" action="https://www.google.com/search" method="get" target="_blank">
+                    <input type="text" name="q" placeholder="Enter the text input here" autocomplete="off" autofocus>
+                </form>
+            </div>
+            <br>
+            <p class="lead text-center" style="color: white; font-size: 18px;"> Press the microphone to activate the Speech Recognition and then speak </p>
+            <p class="lead text-center" style="color: white; font-size: 18px;"> Let's take an example - What is 10 multiplied by 2 ? </p>
+        </div>
+        </div></a>
+    </div>
+
+    <!-- Contact Seciton -->
+    <div class="container-fluid col-xxl-12 px-4 py-5">
+        <a id="contact-main"><div class="row flex-lg-row align-items-center g-2 py-5">
+          <div class="col-lg-12">
+            <h1 class="display-6 fw-bold lh-1 mb-3 head4 text-center" style="font-family: 'Open Sans';">Connect with us 👋</h1>
+            <p class="lead text-center">Please mention the issues faced by you (if any)</p>
+            <!-- form container -->
+            <div class="container py-4">
+                <form class="contact-form">
+                    <!-- name input -->
+                    <div class="mb-3 inputBox">
+                        <label class="form-label" for="name">Name</label>
+                        <input type="text" class="name form-control cust-imp" placeholder="Enter your name here" required/>
+                    </div>
+                    <!-- email input -->
+                    <div class="mb-3 inputBox">
+                        <label class="form-label" for="emailAddress">Email Address</label>
+                        <input type="email" class="email form-control cust-imp" placeholder="Enter your email here" required/>
+                    </div>
+                    <!-- message input -->
+                    <div class="mb-3 inputBox">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea class="message form-control cust-imp" cols="30" rows="10" placeholder="Enter your message here" required></textarea>
+                    </div>
+                    <!-- submit button -->
+                    <div class="d-grid inputBox">
+                        <button type="submit" class="btn btn-primary btn-lg grad-background" style="border: none;">Submit</button>
+                    </div>
+                </form>
+            </div>
+          </div>
+        </div></a>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="container-fluid" style="margin-top: -100px;">
+        <footer class="py-3 my-4">
+          <p class="text-center text-dark">© 2022 Virtual Math Tutor App by Rituraj Mahato</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- Firebase CDN Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <!-- Firebase JavaScript -->
+    <script src="/js/fire.js"></script>
+</body>
+</html>
+
