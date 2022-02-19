@@ -1,1 +1,18 @@
-Here, I would be listing out the packages/libraries used for building the app.
+Packages and Libraries Used -
+
+SpeechRecognition Web API -
+
+https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_AP 
+https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition
+
+Bootstrap Library -
+
+https://getbootstrap.com
+
+FontAwesome (AJAX Library) -
+
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css
+
+Firebase (AJAX Library) -
+
+https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js
